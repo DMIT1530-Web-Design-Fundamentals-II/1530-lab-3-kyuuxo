@@ -1,9 +1,218 @@
 /* NOTE: Make sure that when you complete your Lab, you leave a comment at the top of this file listing which new properties you used! */
-
 :root {
   --dk-grey: #263238;
   --hot-pink: #EC407A;
   --yellow: #FDD835;
   --green: #8BC34A;
   --white: #FAFAFA;
+}
+
+/* UNIVERSAL STYLES */
+body {
+  background: url('../img/crowd-background.webp') top / cover no-repeat;
+  background-color: var(--dk-grey);
+  color: var(--dk-grey);
+  font-family: "Nunito", sans-serif;
+  font-size: 1.125rem;
+}
+
+header .menu-icon:hover{
+  fill: var(--hot-pink);
+}
+
+h1,
+h2 {
+  font-family: 'Pacifico', cursive;
+}
+
+.inner-container {
+  max-width: 64rem;
+  margin: auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+ul a {
+  color: var(--white);
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem;
+  border-left: 0.25rem solid rgba(0, 0, 0, 0);
+  display: block;
+}
+
+li a span {
+  display: none;
+}
+
+.dropdown a {
+  text-decoration: none;
+  padding-left: 3rem;
+}
+
+ul a:hover {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+header {
+  background-color: var(--dk-grey);
+  color: var(--white);
+  padding: 1.6rem 0;
+}
+
+img {
+  padding-top: .2rem;
+  width: 1.4rem;
+  height: 1rem;
+}
+
+.menu-icon img{
+  width: 2.6rem;
+  height: 2.2rem;
+}
+
+.main-menu span img{
+  padding-top: .2rem;
+  width: 1.4rem;
+  height: 1rem;
+}
+
+.click {
+  background: var(--hot-pink);
+  background: linear-gradient(90deg, rgba(255,70,148,1) 0%, rgba(255,221,81,1) 100%);
+  align-items: center;
+  border: none;
+  border-radius: 0.5rem;
+  color: var(--white);
+  padding: 1rem;
+  display: inline-block;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.click a {
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.click a:hover {
+  background-color: var(--white);
+}
+
+.text {
+  text-align: center;
+}
+
+.text h2 {
+  font-size: 3rem;
+  padding: 1.2rem 0;
+}
+
+.text p {
+  padding: 1.2rem 0;
+}
+
+/* MOBILE VIEW */
+@media screen and (min-width: 380px) {
+  .box {
+    height: calc(97vh - 270px);
+    background-position: left;
+
+  }
+
+  .text {
+    padding: 6rem;    
+    background-color: var(--white);
+  }
+
+  .click {
+    margin-top: 1.4rem;
+  }
+
+  .text {
+    margin-top: 20rem;
+    padding: 2.3rem 2.3rem 2.3rem 2.3rem;  
+  }  
+  .text p {
+    width: 18.5rem;
+  }
+}
+
+/* DESKTOP VIEW */
+@media screen and (min-width: 720px) {
+  .dropdown {
+    display: none;
+  }
+
+  .flex-container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  ul.menu>li {
+    padding-left: 6rem;
+    position: relative;
+  }
+
+  li a span {
+    display: inline-block;
+    padding-left: 0.5rem;
+  }
+
+  h1 {
+    padding-bottom: 1.2rem;
+  }
+
+  .dropdown {
+    transition: transform 0.3s;
+    transform-origin: top;
+    position: absolute;
+  }
+
+  .dropdown a {
+    padding-left: 1rem;
+  }
+
+  ul.dropdown {
+    background: var(--dk-grey);
+    position: absolute;
+    left: 3rem;
+    visibility: hidden;
+  }
+
+  ul.menu>li:hover ul.dropdown,
+  ul.menu>li ul.dropdown:hover {
+    visibility: visible;
+    display: block;
+  }
+
+  ul a,
+  ul a:hover {
+    border-left: unset;
+  }
+
+  .text {
+    float: right;
+    padding: 2.3rem 2.3rem 2.3rem 2.3rem;
+    margin-top: 14rem;        
+    margin-right: 20rem;
+  }
+
+  .chill {
+    height: calc(100vh - 160px);
+    background-position: left;
+  }
+
+
+}
+
+/* LARGEST VIEW */
+@media screen and (min-width: 1024px) {
+
 }
