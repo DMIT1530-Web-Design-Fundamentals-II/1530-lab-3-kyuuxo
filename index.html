@@ -7,8 +7,8 @@
     <title>Lab 03</title>
 
     <!-- Meta Tags -->
-    <meta name="author" content="...">
-    <meta name="description" content="...">
+    <meta name="author" content="">
+    <meta name="description" content="This is my lab to see if I understand navbar">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
@@ -16,11 +16,83 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
-
+    <script src="js/main.js" defer></script>
+    <!-- <style>
+        body{
+            background: url('img/crowd-background.webp') top / cover no-repeat;
+        }
+    </style> -->
 </head>
 
 <body>
-    
+    <header>
+        <div class="inner-container wide-flex">
+            <!-- logo -->
+            <div class="flex-container">
+                <!-- First-Level Heading Here -->
+                <h1>eSports</h1>
+                <div class="menu-icon">
+                    <!-- Controller Icon Here -->       
+                    <a href="#"><span><img src="img/joystick-logo.svg" alt="Controller Icon"></span> menu</a>
+
+                </div> <!-- end of .menu-icon -->
+            </div> <!-- end of .flex-container -->
+
+            <nav>
+                <ul class="main-menu">
+                    <!-- Tier 1 -->
+                    <li>
+                        <a href="#"><span><img src="img/pink-circle.svg" alt="arrow" class="wcolor"></span>GAMES
+                            <span><img src="img/down-chevron.svg" alt="arrow" class="wcolor"></span></a>
+                        <!-- The Dropdown -->
+                        <ul class="dropdown">
+                            <li><a href="#">CS:GO</a></li>
+                            <li><a href="#">DOTA 2</a></li>
+                            <li><a href="#">Fortnite</a></li>
+                            <li><a href="#">League of Legends</a></li>
+                            <li><a href="#">Overwatch</a></li>
+                            <li><a href="#">Pokémon</a></li>
+                            <li><a href="#">PUGB</a></li>
+                        </ul>
+                    </li>
+                    <!-- Tier 1 -->
+                    <li><a href="#"><span><img src="img/yellow-circle.svg" alt="arrow" class="wcolor"></span>SCHEDULE
+                            <span><img src="img/down-chevron.svg" alt="arrow" class="wcolor"></span></a>
+                        <!-- 2 Dropdown -->
+                        <ul class="dropdown">
+                            <li><a href="#">Australia & EU</a></li>
+                            <li><a href="#">East Asia</a></li>
+                            <li><a href="#">North America</a></li>
+                        </ul>
+                    </li>
+                    <!-- Tier 1 -->
+                    <li><a href="#"><span><img src="img/green-circle.svg" alt="arrow" class="wcolor"></span>REGISTER
+                            <span><img src="img/down-chevron.svg" alt="arrow" class="wcolor"></span></a>
+                        <!-- The 3 Dropdown -->
+                        <ul class="dropdown">
+                            <li><a href="#">Individual Competitors</a></li>
+                            <li><a href="#">Team Events</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div> <!-- end of .inner-container -->
+    </header>
+    <main>
+        <!-- Main Content Here -->
+        <div class="box">
+            <section class="text">
+                <h2>eSports League</h2>
+                <p>Get your head in the game! Register as an individual competitor or for a team event in an upcoming
+                    tournament near you.</p>
+                <a href="#" class="click">Register Now</a>
+            </section>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
 
 </html>
